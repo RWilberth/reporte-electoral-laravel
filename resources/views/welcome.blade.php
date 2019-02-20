@@ -1,10 +1,10 @@
 @extends('shared.main_layout')
 
 @section('styles')
-    <link rel="stylesheet" href="{{secure_asset('cesium/Widgets/widgets.css')}}">  
+    <link rel="stylesheet" href="{{asset('cesium/Widgets/widgets.css', env('APP_SECURE', false))}}">  
 @stop
 @section('scripts')
-    <script src="{{secure_asset('cesium/Cesium.js')}}" type="text/javascript"></script>
+    <script src="{{asset('cesium/Cesium.js', env('APP_SECURE', false))}}" type="text/javascript"></script>
     <script type="text/javascript">
         Cesium.Ion.defaultAccessToken = 
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZTk4MzgxYi0yMmViLTQ4ZGQtOTE5Yy05NmRhNWI3MWZiM2IiLCJpZCI6MzM0MywiaWF0IjoxNTM3MDY1NzU2fQ.oXkTnacC0lxgGKj17FRFfUUVIHRtjO5Px6Dir8mVjGI';
