@@ -14,7 +14,7 @@
             @yield('content')  
         </div>
 
-        <script src="{{asset('js/libraries.js')}}"></script>
+        <script src="{{asset('js/libraries.js')}}" type="text/javascript"></script>
         @yield('scripts')
     </body>
 </html>
