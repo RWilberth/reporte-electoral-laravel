@@ -33,5 +33,5 @@
     </script>
 @stop
 @section('content')
-    <div id="cesiumContainer"></div>
+    <div id="cesiumContainer" style="max-height: 200px;"></div>
 @stop
